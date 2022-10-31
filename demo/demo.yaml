@@ -1,6 +1,6 @@
-name: taxi-fare-demo
+name: image-caption-demo
 components:
-- name: taxi-fare-demo
+- name: image-caption-demo
   type: job
   image:
     type: build
@@ -10,7 +10,7 @@ components:
       type: tfy-python-buildpack
       command: streamlit run demo/demo.py
   env:
-    MLF_HOST: https://app.develop.truefoundry.tech
+    MLF_HOST: https://app.truefoundry.com/
     MLF_API_KEY: 'MLF_API_KEY' # Get the API_KEY from the settings of truefoundry account
     WORKSPACE_FQN: 'WORKSPACE_FQN' # Add the WORKSPACE_FQN
-    INFER_URL: 'INFER_URL' # Add the FastAPI Inference endpoint
+    # INFER_URL: 'INFER_URL' # Add the FastAPI Inference endpoint

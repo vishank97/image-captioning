@@ -16,6 +16,6 @@ service = Service(
         ),
     ),
     ports=[{"port": 8000}],
-    resources=Resources(memory_limit=2500, memory_request=2000)
+    resources=Resources(cpu_request=1, cpu_limit=1.5,memory_limit=2500, memory_request=2000)
 )
 service.deploy(workspace_fqn=env_vars['components'][0]['env']['WORKSPACE_FQN'])

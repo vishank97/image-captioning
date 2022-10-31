@@ -26,7 +26,7 @@ service = Service(
     },
     ports=[{"port": 8501}], #In public cloud deployment TrueFoundry exposes port 8501
     resources=Resources(
-        cpu_request=0.5, cpu_limit=.5, memory_limit=2500, memory_request=1500
+        cpu_request=1, cpu_limit=1.5, memory_limit=15000, memory_request=10000
     ),
 )
 service.deploy(workspace_fqn=env_vars['components'][0]['env']['WORKSPACE_FQN'])

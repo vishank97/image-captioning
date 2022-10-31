@@ -1,6 +1,4 @@
-from operator import concat
 import streamlit as st
-import requests
 import yaml
 from PIL import Image
 from tqdm import tqdm
@@ -41,7 +39,7 @@ def main():
     st.title("Image Caption Prediction")
     st.header('Welcome to Image Caption Prediction!')
     st.write('This is a sample app that demonstrates the prowess of ServiceFoundry ML model deployment.🚀')
-    st.write('Visit the [Github](https://github.com/vishank97/new-york-taxi-fare-prediction) repo for detailed exaplaination or [Google Colab](https://colab.research.google.com/drive/1WL8cnVmqsWxh9Ok-Ml5axAuxGfnZ1A9S#scrollTo=KDVXAdh7yKei) notebook to get started right away')
+    st.write('Visit the [Github](https://github.com/vishank97/image-captioning) repo for detailed exaplaination and to get started right away')
     with st.form("my_form"):
         
         # is_url = st.radio("Image Type:", ("URL", "From File"))

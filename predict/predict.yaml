@@ -11,5 +11,5 @@ components:
       command: uvicorn predict.main:app --port 8000 --host 0.0.0.0
   env:
     MLF_HOST: https://app.truefoundry.com/
-    MLF_API_KEY: 'djE6dHJ1ZWZvdW5kcnk6dmlzaGFuazo4Yzg5NmY=' # Get the API_KEY from the settings of truefoundry account
-    WORKSPACE_FQN: 'tfy-cluster-euwe1:demo-projects' # Add the WORKSPACE_FQN
+    MLF_API_KEY: 'MLF_API_KEY' # Get the API_KEY from the settings of truefoundry account
+    WORKSPACE_FQN: 'WORKSPACE_FQN' # Add the WORKSPACE_FQN
