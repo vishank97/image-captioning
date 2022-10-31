@@ -1,0 +1,15 @@
+name: image-caption-predict
+components:
+- name: image-caption-predict
+  type: service
+  image:
+    type: build
+    build_source:
+      type: local
+    build_spec:
+      type: tfy-python-buildpack
+      command: uvicorn predict.main:app --port 8000 --host 0.0.0.0
+  env:
+    MLF_HOST: https://app.truefoundry.com/
+    MLF_API_KEY: 'djE6dHJ1ZWZvdW5kcnk6dmlzaGFuazo4Yzg5NmY=' # Get the API_KEY from the settings of truefoundry account
+    WORKSPACE_FQN: 'tfy-cluster-euwe1:demo-projects' # Add the WORKSPACE_FQN
